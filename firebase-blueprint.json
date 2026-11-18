@@ -1,0 +1,75 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User account profile and personalized consultation preferences",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "role": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "avatarUrl": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "joinedDate": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "daysActive": {
+          "type": "number"
+        },
+        "consultationCount": {
+          "type": "number"
+        },
+        "targetGoal": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "coachingStyle": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "studyCategory": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "consultTone": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "notifyGoals": {
+          "type": "boolean"
+        },
+        "notifyReport": {
+          "type": "boolean"
+        },
+        "agreeDataTraining": {
+          "type": "boolean"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": ["name", "email"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile document storing account settings and study preferences"
+    }
+  }
+}

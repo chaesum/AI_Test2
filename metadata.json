@@ -1,0 +1,6 @@
+{
+  "name": "학습 상담 챗봇",
+  "description": "맞춤형 인공지능 기반 자기주도 학습 및 진로 상담 파트너",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

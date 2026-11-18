@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>학습 상담 챗봇</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#00424e","primary-container":"#4f46e5","tertiary-fixed":"#e0e0ff","on-tertiary-fixed":"#000767","on-primary-fixed":"#0f0069","surface-container-high":"#222a3d","on-primary-container":"#dad7ff","inverse-primary":"#4d44e3","on-secondary-fixed":"#001f26","primary":"#c3c0ff","primary-fixed-dim":"#c3c0ff","tertiary-fixed-dim":"#bdc2ff","primary-fixed":"#e2dfff","on-tertiary-fixed-variant":"#2f3aa3","surface-card":"#111827","surface-base":"#0B0F19","outline":"#918fa1","on-secondary":"#003640","surface-dim":"#0b1326","tertiary":"#bdc2ff","surface-container":"#171f33","on-tertiary-container":"#d7d8ff","surface-container-low":"#131b2e","on-surface":"#dae2fd","surface-bright":"#31394d","surface":"#0b1326","surface-tint":"#c3c0ff","surface-container-lowest":"#060e20","outline-variant":"#464555","on-error":"#690005","status-success":"#10B981","on-error-container":"#ffdad6","secondary-fixed-dim":"#4cd7f6","surface-variant":"#2d3449","secondary-fixed":"#acedff","on-tertiary":"#131e8c","on-primary-fixed-variant":"#3323cc","border-subtle":"#1F293D","tertiary-container":"#4a55be","on-secondary-fixed-variant":"#004e5c","status-danger":"#EF4444","surface-container-highest":"#2d3449","on-surface-variant":"#c7c4d8","surface-elevated":"#1E293B","inverse-on-surface":"#283044","background":"#0b1326","border-prominent":"#334155","on-background":"#dae2fd","inverse-surface":"#dae2fd","on-primary":"#1d00a5","secondary-container":"#03b5d3","error-container":"#93000a","secondary":"#4cd7f6","error":"#ffb4ab"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem","space-md":"1rem","gutter-mobile":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","margin":"3rem"},"fontFamily":{"body-lg":["Geist"],"body-md":["Geist"],"body-sm":["Geist"],"headline-lg":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-sm":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"headline-xl-mobile":["Space Grotesk"],"label-md":["Geist"],"label-sm":["Geist"],"headline-xl":["Space Grotesk"],"label-lg":["Geist"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"500"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-8"><a class="flex items-center gap-3 group" data-path="home" href="#"><span class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[20px]">psychology</span></span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface group-hover:text-primary transition-colors">학습 상담 챗봇</span></div></a><nav class="hidden md:flex items-center gap-2" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a class="px-4 py-2 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="home" href="#">서비스 소개</a><a class="px-4 py-2 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="chat-consultation" href="#">챗봇 상담</a><a aria-current="page" class="px-4 py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-full" data-path="mypage" href="#">마이페이지</a></nav></div><div class="flex items-center gap-3"><div class="hidden sm:flex items-center gap-2"><a class="px-4 py-2 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="login" href="#">로그인</a><a class="px-4 py-2 rounded-full font-label-lg text-label-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="signup" href="#">회원가입</a></div><a class="flex items-center p-0.5 rounded-full ring-2 ring-transparent hover:ring-primary/40 transition-all" data-path="mypage" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Uds9Eq1qtqN-WwI1ioJmmN2kCMOEgu4m7FnyxJjFIy78AeJLcnnehJG1cuEhtQDljL_gBKVTi8mn8bMcOBQaZrIAoBsN4IUlm-Cq7L7WWW5eLFw1sgyNI8d7joDOLZd3e9yTIbJl54sOiU4uGlFomMok89u3b7uXxYuZbFHhIN7PQGrOl1_C5EfuznGJXrKBidknsPIcFxsLCd4oLJd1iYHEL_ru3bwtVxZ89CzIkp3SXUFodKrgj2ylU"/></a></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-6 lg:px-12 py-10">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Account Preferences &amp; Identity</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">회원정보 관리</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">등록된 계정 정보를 확인하고 수정할 수 있습니다</p>
+</div>
+<!-- Status Meta Badge -->
+<div class="flex items-center gap-3 bg-surface-container-high px-4 py-2 rounded-full self-start md:self-auto shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface">계정 보안 등급: </span>
+<span class="font-label-sm text-label-sm text-status-success font-semibold">안전 (2단계 인증 활성)</span>
+</div>
+</div>
+<!-- Main Grid Dashboard -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Profile Summary & Activity Stats (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Profile Overview Card -->
+<div class="bg-surface-card rounded-lg p-6 shadow-md relative overflow-hidden">
+<div class="absolute -top-16 -right-16 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col items-center text-center">
+<div class="relative group mb-4">
+<div class="w-24 h-24 rounded-full overflow-hidden shadow-lg p-1 bg-surface-container-high">
+<img alt="사용자 프로필 사진" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApUAMNzsTk57j_L6mIn_c0M5hJnMWasSv310CrU24wT8HYPCTb6v6vEyy-j1zuk9Oz8DIKYvyCwHUTG1_viTaaoKtKNJsVNKUmYs_L6IgyZYISryezMwQkMjbO0-IfsByGjw967hC4x2ETXla7-7I3Bjd15OgzTHEKP8HwcuulKDL4IcBvD9GmKBOGwG9zqN-ytTwsq4yXCa1ZHdit9Vq85U3tToi8PFjHBA-LHy6r5SvL0HYqKkd8"/>
+</div>
+<button aria-label="프로필 사진 변경" class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:scale-105 transition-transform shadow-md" type="button">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+</button>
+</div>
+<div class="flex items-center gap-2 mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">김서연</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary">학생 회원</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">seoyeon.kim@example.com</p>
+<div class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-full bg-surface-container-low mb-6">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">calendar_month</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">가입일: 2024년 3월 15일 (342일째 학습 중)</span>
+</div>
+<!-- Mini Consultation Telemetry Chart -->
+<div class="w-full bg-surface-container-low p-4 rounded-lg text-left">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface">누적 인공지능 학습 상담</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">총 48회</span>
+</div>
+<!-- Sparkline Graphic -->
+<div class="h-14 w-full flex items-end gap-1.5 pt-2 pb-1">
+<div class="flex-1 bg-surface-container-high hover:bg-primary-container rounded-t-sm transition-all h-[30%]"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-primary-container rounded-t-sm transition-all h-[55%]"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-primary-container rounded-t-sm transition-all h-[40%]"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-primary-container rounded-t-sm transition-all h-[75%]"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-primary-container rounded-t-sm transition-all h-[60%]"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-primary-container rounded-t-sm transition-all h-[90%]"></div>
+<div class="flex-1 bg-primary-container rounded-t-sm transition-all h-[100%] shadow-[0_0_10px_rgba(79,70,229,0.5)]"></div>
+</div>
+<div class="flex justify-between items-center mt-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>최근 7주 상담 추이</span>
+<span class="text-primary font-medium">이번 주 활발</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Summary Info Banner -->
+<div class="bg-surface-card rounded-lg p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">psychology_alt</span>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">전담 챗봇 맞춤화 프로필</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">상담 세션마다 설정된 사용자 정보를 기반으로 정밀한 학습 및 커리어 로드맵을 제안합니다.</p>
+</div>
+</div>
+<div class="pt-2 flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface">목표: 인공지능 엔지니어링</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface">선호: 주간 계획 코칭</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Account Management Forms & Danger Zone (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Section 1: Basic Information -->
+<div class="bg-surface-card rounded-lg p-6 lg:p-8 shadow-md">
+<div class="flex items-center justify-between pb-6 mb-6">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">기본 계정 정보</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">플랫폼 및 상담 세션에서 식별되는 프로필 정보입니다.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">자동 동기화 중</span>
+</div>
+<form class="flex flex-col gap-6" id="profile-form" onsubmit="event.preventDefault(); showSaveNotice();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Nickname / Name Input -->
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between" for="user-name">
+<span>이름 / 닉네임</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">실명 또는 별칭</span>
+</label>
+<div class="relative">
+<input class="w-full h-12 px-4 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="user-name" type="text" value="김서연"/>
+</div>
+</div>
+<!-- Email Verification Field -->
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between" for="user-email">
+<span>이메일 주소</span>
+<span class="font-label-sm text-label-sm text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 인증 완료
+                  </span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 pl-4 pr-24 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="user-email" type="email" value="seoyeon.kim@example.com"/>
+<button class="absolute right-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+                    변경
+                  </button>
+</div>
+</div>
+</div>
+<!-- Learning Domain & Level Preferences -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface" for="study-category">관심 학습 분야</label>
+<div class="relative">
+<select class="w-full h-12 px-4 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none transition-all cursor-pointer" id="study-category">
+<option selected="" value="cs">소프트웨어 및 컴퓨터공학</option>
+<option value="math">수학 및 데이터 분석</option>
+<option value="business">경영 / 비즈니스 전략</option>
+<option value="language">외국어 및 어학 시험</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-3 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface" for="consult-tone">상담 톤앤매너</label>
+<div class="relative">
+<select class="w-full h-12 px-4 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none transition-all cursor-pointer" id="consult-tone">
+<option selected="" value="mentor">따뜻하고 격려해주는 멘토형</option>
+<option value="analytical">논리적이고 분석적인 코치형</option>
+<option value="practical">핵심만 빠르게 짚어주는 실전형</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-3 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Submit Action -->
+<div class="flex justify-end pt-2">
+<button class="px-6 py-3 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-all shadow-[0_0_20px_rgba(79,70,229,0.3)] flex items-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>변경사항 저장</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Section 2: Password Security -->
+<div class="bg-surface-card rounded-lg p-6 lg:p-8 shadow-md">
+<div class="flex items-center gap-3 pb-6 mb-6">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">비밀번호 변경</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">정기적인 비밀번호 변경으로 계정 정보를 안전하게 보호하세요.</p>
+</div>
+</div>
+<form class="flex flex-col gap-6" onsubmit="event.preventDefault(); showPasswordNotice();">
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface" for="current-password">현재 비밀번호</label>
+<input class="w-full h-12 px-4 rounded-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="current-password" placeholder="기존 비밀번호를 입력해주세요" type="password"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface" for="new-password">새 비밀번호</label>
+<input class="w-full h-12 px-4 rounded-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="new-password" placeholder="영문, 숫자 포함 8자 이상" type="password"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface" for="confirm-new-password">새 비밀번호 확인</label>
+<input class="w-full h-12 px-4 rounded-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="confirm-new-password" placeholder="새 비밀번호 재입력" type="password"/>
+</div>
+</div>
+<div class="flex justify-end pt-2">
+<button class="px-6 py-3 rounded-full bg-surface-elevated text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors flex items-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>비밀번호 업데이트</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Section 3: Notification & Consultation Environment -->
+<div class="bg-surface-card rounded-lg p-6 lg:p-8 shadow-md">
+<div class="flex items-center gap-3 pb-6 mb-4">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">알림 및 상담 환경설정</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">학습 알림 및 추천 세션 수신 정책을 관리합니다.</p>
+</div>
+</div>
+<div class="divide-y divide-surface-container-high flex flex-col">
+<!-- Item 1 -->
+<div class="py-4 flex items-center justify-between gap-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">학습 목표 및 리마인더 알림</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">주간 스터디 루틴 및 챗봇 권장 복습 세션 알림을 수신합니다.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Item 2 -->
+<div class="py-4 flex items-center justify-between gap-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">상담 분석 리포트 메일링</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">매월 1회 인공지능이 종합 분석한 자기주도학습 진단서를 이메일로 받아봅니다.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Item 3 -->
+<div class="py-4 flex items-center justify-between gap-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">대화 내역 인공지능 개인화 학습 활용 동의</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">회원님의 피드백을 기반으로 챗봇 알고리즘 답변 품질을 지속 개선합니다.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Section 4: CRITICAL REQUIREMENT - Danger Zone / Account Deletion -->
+<div class="bg-surface-card rounded-lg p-6 lg:p-8 shadow-md relative overflow-hidden">
+<!-- Subtle danger warning hue -->
+<div class="absolute -right-20 -bottom-20 w-48 h-48 bg-error-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-start gap-4">
+<span class="w-10 h-10 rounded-full bg-error-container/30 text-status-danger flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</span>
+<div class="flex flex-col gap-2 flex-grow">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-error">계정 삭제 (회원 탈퇴)</h2>
+<span class="px-2 py-0.5 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm">주의 구역</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                계정 탈퇴 시 기존 <strong class="text-on-surface font-medium">학습 상담 내역 및 개인정보가 모두 즉시 영구 삭제</strong>되며, 복구할 수 없습니다. 생성된 진로 리포트 및 북마크도 모두 파기됩니다.
+              </p>
+<div class="mt-4 pt-2">
+<!-- Delete Account Trigger Button -->
+<button class="px-6 py-3 rounded-full bg-error-container/30 text-error hover:bg-status-danger hover:text-white transition-all font-label-lg text-label-lg flex items-center gap-2 shadow-sm" onclick="openDeleteModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">person_remove</span>
+<span>회원 탈퇴</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Delete Confirmation Modal (Triggered by danger action) -->
+<div class="fixed inset-0 z-50 hidden bg-surface-dim/80 backdrop-blur-md flex items-center justify-center p-4" id="delete-modal">
+<div class="bg-surface-card w-full max-w-lg rounded-lg p-6 lg:p-8 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+<div class="w-12 h-12 rounded-full bg-error-container/40 text-error flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[28px]">delete_forever</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">정말 탈퇴하시겠습니까?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+        탈퇴 처리 즉시 모든 상담 기록, 학습 리포트 및 개인 맞춤 프로필 데이터가 서버에서 영구 삭제됩니다. 이 작업은 취소할 수 없습니다.
+      </p>
+<div class="bg-surface-container-low p-4 rounded-lg mb-6 flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="delete-confirm-text">
+          확인을 위해 아래 입력창에 <span class="text-error font-semibold">"계정삭제"</span>를 입력하세요.
+        </label>
+<input class="w-full h-11 px-3 rounded-full bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-status-danger transition-all" id="delete-confirm-text" placeholder="계정삭제" type="text"/>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="px-5 py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-colors" onclick="closeDeleteModal()" type="button">
+          취소
+        </button>
+<button class="px-5 py-2.5 rounded-full bg-status-danger text-white font-label-lg text-label-lg hover:bg-opacity-90 transition-all opacity-50 cursor-not-allowed shadow-md" disabled="" id="final-delete-btn" onclick="executeAccountDeletion()" type="button">
+          영구 삭제 확인
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-8 right-8 z-50 hidden bg-surface-elevated text-on-surface px-5 py-3.5 rounded-full shadow-2xl flex items-center gap-3 transition-all transform translate-y-4" id="toast">
+<span class="material-symbols-outlined text-status-success text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-label-lg text-label-lg" id="toast-message">변경사항이 성공적으로 저장되었습니다.</span>
+</div>
+</div>
+<script>
+  function showToast(message, isSuccess = true) {
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toast-message');
+    const toastIcon = document.getElementById('toast-icon');
+
+    toastMessage.textContent = message;
+    if (isSuccess) {
+      toastIcon.textContent = 'check_circle';
+      toastIcon.className = 'material-symbols-outlined text-status-success text-[20px]';
+    } else {
+      toastIcon.textContent = 'info';
+      toastIcon.className = 'material-symbols-outlined text-primary text-[20px]';
+    }
+
+    toast.classList.remove('hidden', 'translate-y-4');
+    toast.classList.add('flex', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-4');
+      setTimeout(() => {
+        toast.classList.remove('flex');
+        toast.classList.add('hidden');
+      }, 200);
+    }, 3000);
+  }
+
+  function showSaveNotice() {
+    showToast('프로필 기본 정보가 성공적으로 반영되었습니다.');
+  }
+
+  function showPasswordNotice() {
+    const cur = document.getElementById('current-password').value;
+    const nw = document.getElementById('new-password').value;
+    const cnf = document.getElementById('confirm-new-password').value;
+
+    if (!cur || !nw || !cnf) {
+      showToast('모든 비밀번호 필드를 입력해주세요.', false);
+      return;
+    }
+    if (nw !== cnf) {
+      showToast('새 비밀번호가 일치하지 않습니다.', false);
+      return;
+    }
+
+    document.getElementById('current-password').value = '';
+    document.getElementById('new-password').value = '';
+    document.getElementById('confirm-new-password').value = '';
+    showToast('비밀번호가 성공적으로 변경되었습니다.');
+  }
+
+  function openDeleteModal() {
+    const modal = document.getElementById('delete-modal');
+    modal.classList.remove('hidden');
+    document.getElementById('delete-confirm-text').value = '';
+    updateConfirmState();
+  }
+
+  function closeDeleteModal() {
+    const modal = document.getElementById('delete-modal');
+    modal.classList.add('hidden');
+  }
+
+  const deleteInput = document.getElementById('delete-confirm-text');
+  const deleteBtn = document.getElementById('final-delete-btn');
+
+  function updateConfirmState() {
+    if (deleteInput && deleteBtn) {
+      if (deleteInput.value.trim() === '계정삭제') {
+        deleteBtn.disabled = false;
+        deleteBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+      } else {
+        deleteBtn.disabled = true;
+        deleteBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      }
+    }
+  }
+
+  if (deleteInput) {
+    deleteInput.addEventListener('input', updateConfirmState);
+  }
+
+  function executeAccountDeletion() {
+    closeDeleteModal();
+    alert('회원 탈퇴 처리가 안전하게 완료되었습니다. 서비스 메인 화면으로 이동합니다.');
+    window.location.href = '#';
+  }
+</script></main><footer class="w-full bg-surface-container-low mt-auto"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col items-center md:items-start gap-1"><span class="font-headline-sm text-headline-sm text-on-surface">학습 상담 챗봇</span><p class="font-body-sm text-body-sm text-on-surface-variant">맞춤형 인공지능 기반 자기주도 학습 및 진로 상담 파트너</p></div><div class="flex items-center gap-6 font-label-md text-label-md text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="terms" href="#">이용약관</a><a class="hover:text-on-surface transition-colors" data-path="privacy" href="#">개인정보처리방침</a><a class="hover:text-on-surface transition-colors" data-path="support" href="#">고객지원</a></div><p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 학습 상담 챗봇 서비스. All rights reserved.</p></div></footer></body></html>
